@@ -102,7 +102,6 @@ const AddBox  = () => {
     return (
         <div className="container">
 
-        {message && <div className={'alert alert-' + message.type}>{message.value}</div> }
             <Form />
             
         </div>
