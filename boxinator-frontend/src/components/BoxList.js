@@ -5,7 +5,6 @@ import BoxService from '../service/BoxService';
 const BoxList = () =>{
 
 
-    //const [box,setBox]=useState({receiver:'',weight:0, boxcolour:'',shippingcost:0});
     const [message, setMessage] = useState({value: '', type: ''});
     
     const [reload, setReload] = useState(false);
