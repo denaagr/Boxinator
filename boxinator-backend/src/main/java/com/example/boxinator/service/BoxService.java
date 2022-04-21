@@ -16,10 +16,5 @@ public interface BoxService {
 
 
 
-    //    BoxDto findById(Integer id) throws DataNotFoundException;
-
-  //  BoxDto update(BoxDto dto) throws DataNotFoundException;
-
-   // void delete(Integer id) throws DataNotFoundException, DataConstraintViolationException;
-
+    
 }
