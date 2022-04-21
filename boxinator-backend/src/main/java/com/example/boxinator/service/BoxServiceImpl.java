@@ -29,12 +29,7 @@ public class BoxServiceImpl implements BoxService{
         this.repository = repository;
     }
 
-//    @Override
-//    public BoxDto findById(Integer id) throws DataNotFoundException {
-//        if (id == null || id == 0) throw new ArgumentException("Box Id should not be null or 0");
-//        Box result = repository.findById(id).orElseThrow(() -> new DataNotFoundException("Box not found"));
-//        return mapper.map(result, BoxDto.class);
-//    }
+
 
 
     @Override
@@ -57,21 +52,5 @@ public class BoxServiceImpl implements BoxService{
         return mapper.map(result, BoxDto.class);
     }
 
-//    @Override
-//    @Transactional(rollbackFor = {Exception.class})
-//    public BoxDto update(BoxDto dto) throws DataNotFoundException {
-//        System.out.println("dto = " + dto);
-//        if (dto == null) throw new ArgumentException("Box data should not be null");
-//        if (dto.getId() == null) throw new ArgumentException("id should not be null");
-//
-//        Box entity = mapper.map(dto, Box.class);
-//        Box result = repository.save(entity);
-//
-//        return mapper.map(result, BoxDto.class);
-//    }
 
-//    @Override
-//    public void delete(Integer id) throws DataNotFoundException {
-//        repository.delete(mapper.map(findById(id), Box.class));
-//    }
 }
